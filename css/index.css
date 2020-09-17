@@ -1,0 +1,68 @@
+/* FONTS
+
+font-family: 'Advent Pro', sans-serif;
+font-family: 'Armata', sans-serif;
+font-family: 'Audiowide', cursive;
+font-family: 'Julius Sans One', sans-serif;
+font-family: 'Monoton', cursive; 
+font-family: 'Baloo 2', cursive;
+font-family: 'Cormorant SC', serif;
+font-family: 'Ubuntu', sans-serif;
+
+*/
+
+
+
+
+* {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#container {
+    background-color: black;
+}
+
+#bg-image {
+    height: 100vh;
+    background-image: url("../images/top1.jpg");
+    background-size: cover;
+    z-index: 0;
+    opacity: 0.65;
+    filter: blur(5px) sepia(30%);
+}
+
+#text-box {
+    padding: 60px 50px;
+    width: 50%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px white;
+    border-style: groove;
+}
+
+#hero-subtitle {
+    font-family: 'Baloo 2', cursive;
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+#hero-name {
+    font-family: 'Audiowide', cursive;
+    font-size: 50px;
+    font-weight: 300;
+    letter-spacing: 10px;
+    word-spacing: 20px;
+    padding-bottom: 10px;
+}
+
+#hero-paragraph {
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+    line-height: 25px;
+}
