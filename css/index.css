@@ -21,6 +21,15 @@ font-family: 'Ubuntu', sans-serif;
     border: 0;
 }
 
+#nav-bar {
+    list-style-type: none;
+    margin: 0;
+}
+
+#nav-bar ul li {
+    display: inline-block;
+}
+
 #container {
     background-color: black;
 }
@@ -29,6 +38,7 @@ font-family: 'Ubuntu', sans-serif;
     height: 100vh;
     background-image: url("../images/top1.jpg");
     background-size: cover;
+    background-attachment: fixed;
     z-index: 0;
     opacity: 0.65;
     filter: blur(5px) sepia(30%);
