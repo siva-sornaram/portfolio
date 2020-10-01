@@ -10,28 +10,83 @@
 </head>
 <body>
     <div class="cursor"></div>
-    <section id="container">
-        <div id="nav-bar">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./about.html">About</a></li>
-            </ul>
-        </div>
-        <div id="bg-image"></div>
-        <div id="text-box">
-            <fieldset>
-                <div id="hero-subtitle">Full Stack Web Developer</div>
-                <h1 id="hero-name">Siva Sornaram</h1>
-                <p id="hero-paragraph">Hi! Welcome to my Portfolio. I'm a BE graduate in Electical and Electronics Engineering passionated on &#60/Software Development&#62</p>
-            </fieldset>
-        </div>
-        <div id="social">
-            <a href=""><img src="./images/in.png" alt="linkedin-logo.png"></a>
-            <a href=""><img src="./images/insta.png" alt="instagram-logo.png"></a>
-            <a href=""><img src="./images/fb.png" alt="facebook-logo.png"></a>
-        </div>
-    </section>
+    <div id="nav-bar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </div>
+    <div id="home">
+        <section id="container">
+            <div id="bg-image"></div>
+            <div id="text-box">
+                <div id="hero-img">
+                    <img src="./images/hero.jpg" alt="hero_image.jpg">
+                </div>
+                <fieldset>
+                    <div id="hero-subtitle">Full Stack Web Developer</div>
+                    <h1 id="hero-name">Siva Sornaram</h1>
+                    <p id="hero-paragraph">Hi! Welcome to my Portfolio. I'm a BE graduate in Electical and Electronics Engineering passionated on &#60/Software Development&#62</p>
+                </fieldset>
+            </div>
+            <div id="social">
+                <a href=""><img src="./images/GitHub-Mark-120px-plus.png"></a>
+                <a href=""><img src="./images/in.png" alt="linkedin-logo.png"></a>
+                <a href=""><img src="./images/insta.png" alt="instagram-logo.png"></a>
+                <a href=""><img src="./images/fb.png" alt="facebook-logo.png"></a>
+            </div>
+        </section>
+    </div> 
+    
+    <div id="projects">
+        <section id="projects-container">
+            <h1>Projects</h1>
+            <div class="projects">
+                <h3 class="project-1">SMART VEHICLE MONITORING SYSTEM USING RASPBERRY PI & OPENCV</h3>
+                <p class="project-1">A Real time vehicle monitoring system that continuously looks for vehicle’s number plates and collects the real time data as whether it’s a residential vehicle or visitor vehicle. It’s a fully automated system that uses a raspberry pi, camera and OpenCV.</p>
+                <h3 class="project-2">SMART SECURITY MONITORING USING RASPBERRY PI & PYTHON </h3>
+                <p class="project-2">It’s a security monitoring system. It just detects any human interface using the camera and sends an email to the specified email address using Raspberry PI and a PI Camera using a package called OpenCV, a python package for image processing.</p>
+                <h3 class="project-3">SPEED REGULATION OF CEILING FAN USING IOT</h3>
+                <p class="project-3">This Project is about fully automated ceiling fan control using IoT. The PWN signals are sent to the adafruit MQTT Broker from Google Assistant via IFTTT. The NodeMCU receive the PWN signals via WiFi and the circuit attached to the NodeMCU regulates the AC voltage and controls the fan speed.</p>
+            </div>
+            <!-- 
+                SMART VEHICLE MONITORING SYSTEM USING RASPBERRY PI & OPENCV
+                A Real time vehicle monitoring system that continuously looks for vehicle’s number plates and collects the real time data as whether it’s a residential vehicle or visitor vehicle. It’s a fully automated system that uses a raspberry pi, camera and OpenCV.
+                SMART SECURITY MONITORING USING RASPBERRY PI & PYTHON 
+                It’s a security monitoring system. It just detects any human interface using the camera and sends an email to the specified email address using Raspberry PI and a PI Camera using a package called OpenCV, a python package for image processing.
+                SPEED REGULATION OF CEILING FAN USING IOT
+                This Project is about fully automated ceiling fan control using IoT. The PWN signals are sent to the adafruit MQTT Broker from Google Assistant via IFTTT. The NodeMCU receive the PWN signals via WiFi and the circuit attached to the NodeMCU regulates the AC voltage and controls the fan speed.
+            -->
+        </section>
+    </div>
+
+    <div id="about">
+        <section id="about-container">
+            <h1>About</h1>
+            <h3>Skills</h3>
+            <div class="skills">
+                <h3>// Languages Known</h3>
+                <img src="./images/c++.png" alt="c++.png">
+                <img src="./images/java.png" alt="java.png">
+                <img src="./images/python.png" alt="python.png">
+                <h3>// Web Development</h3>
+                <img src="./images/font-end.png" alt="html.png, css.png, js.png">
+                <img src="./images/java servlet.png" alt="java servlet.png">
+                <h3>// Cyber Security & Other tools and IDE's</h3>
+                <img src="./images/cyber.png" alt="cyber security.png">
+                <img src="./images/Virtualbox_logo.png" alt="Virtualbox_logo.png">
+                <img src="./images/arduino.png" alt="arduino.png">
+                <img src="./images/rasp.png" alt="raspberry.png">
+            </div>
+            <div class="my-resume">
+                <h3>My Resume</h3>
+            </div>
+            <div class="contact">
+                <h3>Contact Me</h3>
+            </div>
+        </section>
+    </div>
     <script src="./js/index.js"></script>
 </body>
 </html>

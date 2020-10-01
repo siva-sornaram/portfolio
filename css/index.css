@@ -74,9 +74,23 @@
     filter: blur(5px) sepia(30%);
 }
 
+#hero-img {
+    float: left;
+    padding: 5px;
+}
+
+#hero-img img {
+    height: 250px;
+    width: auto;
+    border-radius: 50%;
+    border: 5px white;
+    border-style: double;
+    padding: 3px;
+}
+
 #text-box {
-    padding: 60px 50px;
-    width: 50%;
+    padding: 30px 25px;
+    width: 75%;
     color: white;
     position: absolute;
     top: 50%;
@@ -86,10 +100,14 @@
     border-style: groove;
 }
 
+#text-box fieldset {
+    padding: 20px;
+}
+
 #hero-subtitle {
     font-family: 'Baloo 2', cursive;
     font-size: 25px;
-    padding-bottom: 10px;
+    padding-top: 5%;
 }
 
 #hero-name {
@@ -109,12 +127,86 @@
 
 #social {
     color: whitesmoke;
+    padding-right: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 #social a img {
-    filter: invert();
-    height: 50px;
-    width: 50px;
+    filter: invert(50%);
+    height: 40px;
+    width: 40px;
+    margin: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0);
+    padding: 4px;
+}
+
+#social a img:hover {
+    border: black solid 2px;
+    border-radius: 10px;
+    filter: invert(100%);
+}
+
+#projects {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+}
+
+#projects::before {
+    content: "";
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;height: 100vh;
+    background-image: url("../images/top4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(5px) sepia(30%);
+    opacity: 0.65;
+    z-index: 0;
+}
+
+#projects-container {
+    position: relative;
+    color: white;
+}
+
+#projects-container h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 70px;
+    padding: 7% 0px 30px 20px;
+}
+
+.projects {
+    position: absolute;
+    margin-top: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border: whitesmoke solid 3px;
+    border-radius: 10px;
+    border-style: groove;
+    padding: 30px;
+    width: 70%;
+    align-items: center;
+}
+
+.projects h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.projects p {
+    font-family: 'Baloo 2', cursive;
+    font-size: 22px;
+}
+
+
+
+.skills img {
+    height: 100px;
+    width: auto;
 }
 
 
