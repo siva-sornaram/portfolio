@@ -152,6 +152,7 @@
     position: relative;
     background-color: black;
     height: 100vh;
+    z-index: 0;
 }
 
 #projects::before {
@@ -202,11 +203,62 @@
     font-size: 22px;
 }
 
+#about {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    z-index: 0;
+}
 
+#about::before {
+    content: "";
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;height: 100vh;
+    background-image: url("../images/top3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(5px) sepia(30%);
+    opacity: 0.65;
+    z-index: 0;
+}
+
+#about-container {
+    position: relative;
+    color: white;
+}
+
+#about-container h1 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 70px;
+    padding: 7% 0px 30px 20px;
+}
+
+#about-container > h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 50px;
+    padding: 0px 0px 20px 40px;
+}
+
+.skills {
+    display: inline-block;
+    width: 50%;
+}
+
+.skills h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 25px;
+    padding: 30px;
+}
 
 .skills img {
-    height: 100px;
+    height: 50px;
     width: auto;
+    padding-left: 3%;
+}
+
+.my-resume {
+    display: inline-block;
 }
 
 
