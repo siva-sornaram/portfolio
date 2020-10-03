@@ -20,6 +20,11 @@
     padding: 0;
     border: 0;
     /* cursor: none; */
+    transition: all .2s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 #nav-bar {
@@ -228,21 +233,25 @@
     color: white;
 }
 
+#about-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #about-container h1 {
     font-family: 'Cormorant SC', serif;
     font-size: 70px;
     padding: 7% 0px 30px 20px;
 }
 
-#about-container > h3 {
+.skills > h4 {
     font-family: 'Cormorant SC', serif;
     font-size: 50px;
     padding: 0px 0px 20px 40px;
 }
 
 .skills {
-    display: inline-block;
-    width: 50%;
+    min-width: 50%;
 }
 
 .skills h3 {
@@ -257,11 +266,122 @@
     padding-left: 3%;
 }
 
-.my-resume {
-    display: inline-block;
+#right-div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#photo-grid h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 50px;
+    padding: 30px;
+}
+
+#photo-grid /* :nth-child(n+2) */ {
+    margin: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+/* PHOTO GRID IN ABOUT SECTION */
+#photo-grid img {
+    padding: 2px;
+    height: 100px;
+    width: auto;
 }
 
 
+/* END OF PHOTO GRID */
+
+.my-resume {
+    margin: 5px;
+}
+
+.my-resume h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 50px;
+    padding: 40px 0px 40px 0px;
+}
+
+.my-resume input {
+    margin: 10px 0px 0px 30%;
+    background-color: transparent;
+    color: whitesmoke;
+    border: 3px solid whitesmoke;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.my-resume input:hover {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.contact {
+    font-family: 'Advent Pro', sans-serif;
+    font-size: 20px;
+}
+
+#contact-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact h3 {
+    font-family: 'Cormorant SC', serif;
+    font-size: 50px;
+    padding: 30px;
+}
+
+.contact h4 {
+    display: inline-block;
+    color: whitesmoke;
+}
+
+.contact img {
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    filter: invert(80%);
+    padding: 10px;
+}
+
+#contact-flex  a {
+    color: rgba(184, 183, 183, 0.685);
+    text-decoration: none;
+}
+
+#contact-flex a:hover {
+    color: white;
+}
+
+.contact img:hover {
+    filter: invert(100%);
+    color: white;
+}
+
+#contact-mail {
+    align-self: flex-start;
+    padding-left: 20px;
+}
+
+#contact-github {
+    align-self: center;
+}
+
+#contact-social {
+    align-self: flex-end;
+    padding-right: 20px;
+}
 /* CURSOR BEGINNING*/
 
 .cursor {
@@ -327,3 +447,4 @@
 
 
 /* CURSOR END */
+
